@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Under Construction</title>
+
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e5e5e5;
+    --accent: #888;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 600px;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--accent);
+    line-height: 1.6;
+  }
+
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: var(--fg);
+    margin: 30px auto;
+    opacity: 0.2;
+  }
+
+  .status {
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 30px;
+  }
+
+  /* subtle fade animation */
+  .container {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Under Construction</h1>
+  
+  <div class="divider"></div>
+
+  <p>
+    We're currently building something exceptional.<br>
+    Please check back soon.
+  </p>
+
+  <div class="status">
+    Coming Soon
+  </div>
+</div>
+
+</body>
+</html>
